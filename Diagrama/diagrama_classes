@@ -1,0 +1,10 @@
+// Diagrama UML - Classes e Interfaces
+digraph {
+	ReprodutorMusical [label="{{Interface | ReprodutorMusical} | + play(musica: String): void | + pause(): void | + stop(): void}" shape=record]
+	AparelhoTelefonico [label="{{Interface | AparelhoTelefonico} | + ligar(numero: String): void | + atender(): void | + desligar(): void}" shape=record]
+	NavegadorInternet [label="{{Interface | NavegadorInternet} | + exibirPagina(url: String): void | + adicionarNovaAba(): void | + atualizarPagina(): void}" shape=record]
+	IPhone [label="{Class | IPhone}" shape=record]
+	ReprodutorMusical -> IPhone [arrowhead=onormal]
+	AparelhoTelefonico -> IPhone [arrowhead=onormal]
+	NavegadorInternet -> IPhone [arrowhead=onormal]
+}
